@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  mariadb:
+    image: mariadb/server:10.4
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+    environment:
+      - MARIADB_ROOT_PASSWORD=admin
+    volumes:
+      - mariadbvol:/var/lib/mariadb
+volumes:
+  mariadbvol:

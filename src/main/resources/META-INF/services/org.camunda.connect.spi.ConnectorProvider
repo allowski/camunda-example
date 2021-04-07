@@ -1,0 +1,3 @@
+com.camunda.impl.camunda.connectors.example.CustomConnectorProvider
+com.camunda.impl.camunda.connectors.awesome.AwesomeConnectorProvider
+com.camunda.impl.camunda.connectors.rest.RestConnectorProvider

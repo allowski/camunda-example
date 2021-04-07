@@ -1,0 +1,372 @@
+Attaching to camunda-test_mariadb_1, camunda-test_keycloak_1, camunda-test_camunda_1
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] mysqld (mysqld 10.4.18-MariaDB-1:10.4.18+maria~bionic) starting as process 1 ...
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Using Linux native AIO
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Uses event mutexes
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Number of pools: 1
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Using SSE2 crc32 instructions
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=60976
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: 10.4.18 started; log sequence number 60985; transaction id 20
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] InnoDB: Buffer pool(s) load completed at 210329 23:32:01
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] Server socket created on IP: '::'.
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Warning] 'proxies_priv' entry '@% root@bca184088787' ignored in --skip-name-resolve mode.
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] Reading of all Master_info entries succeeded
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] Added new Master_info '' to hash table
+[36mmariadb_1   |[0m 2021-03-29 23:32:01 0 [Note] mysqld: ready for connections.
+[36mmariadb_1   |[0m Version: '10.4.18-MariaDB-1:10.4.18+maria~bionic'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[32mcamunda_1   |[0m Setting Active Processor Count to 8
+[32mcamunda_1   |[0m Calculating JVM memory based on 1255M available memory
+[32mcamunda_1   |[0m Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx621630K -XX:MaxMetaspaceSize=151489K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 1255M, Thread Count: 250, Loaded Class Count: 24332, Headroom: 0%)
+[33mkeycloak_1  |[0m User with username 'admin' already added to '/opt/jboss/keycloak/standalone/configuration/keycloak-add-user.json'
+[32mcamunda_1   |[0m Adding 129 container CA certificates to JVM truststore
+[32mcamunda_1   |[0m Spring Cloud Bindings Enabled
+[32mcamunda_1   |[0m Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -agentpath:/layers/paketo-buildpacks_bellsoft-liberica/jvmkill/jvmkill-1.16.0-RELEASE.so=printHeapHistogram=1 -XX:ActiveProcessorCount=8 -XX:MaxDirectMemorySize=10M -Xmx621630K -XX:MaxMetaspaceSize=151489K -XX:ReservedCodeCacheSize=240M -Xss1M -Dorg.springframework.cloud.bindings.boot.enable=true
+[33mcamunda-test_keycloak_1 exited with code 1
+[0m[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m  ____                                 _         ____  ____  __  __
+[32mcamunda_1   |[0m / ___| __ _ _ __ ___  _   _ _ __   __| | __ _  | __ )|  _ \|  \/  |
+[32mcamunda_1   |[0m | |   / _` | '_ ` _ \| | | | '_ \ / _` |/ _` | |  _ \| |_) | |\/| |
+[32mcamunda_1   |[0m | |__| (_| | | | | | | |_| | | | | (_| | (_| | | |_) |  __/| |  | |
+[32mcamunda_1   |[0m \____/\__,_|_| |_| |_|\__,_|_| |_|\__,_|\__,_| |____/|_|   |_|  |_|
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m   Spring-Boot:  (v2.3.9.RELEASE)
+[32mcamunda_1   |[0m   Camunda BPM: (v7.14.0)
+[32mcamunda_1   |[0m   Camunda BPM Spring Boot Starter: (v7.14.0)
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m 2021-03-29 23:32:04.086  INFO 1 --- [           main] com.camunda.impl.LogicApplicationKt      : Starting LogicApplicationKt on c21fa4489476 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+[32mcamunda_1   |[0m 2021-03-29 23:32:04.090  INFO 1 --- [           main] com.camunda.impl.LogicApplicationKt      : No active profile set, falling back to default profiles: default
+[32mcamunda_1   |[0m 2021-03-29 23:32:04.573  WARN 1 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.144  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.198  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.703  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.713  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.714  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.774  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.774  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1642 ms
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.796  INFO 1 --- [           main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Configuring camunda rest api.
+[32mcamunda_1   |[0m 2021-03-29 23:32:05.814  INFO 1 --- [           main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Finished configuring camunda rest api.
+[32mcamunda_1   |[0m 2021-03-29 23:32:06.266  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[32mcamunda_1   |[0m 2021-03-29 23:32:06.309  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+[32mcamunda_1   |[0m 2021-03-29 23:32:06.427  INFO 1 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[32mcamunda_1   |[0m 2021-03-29 23:32:06.517  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[32mcamunda_1   |[0m 2021-03-29 23:32:07.559 ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m java.sql.SQLSyntaxErrorException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.get(ExceptionMapper.java:139) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.getException(ExceptionMapper.java:101) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.throwException(ExceptionMapper.java:91) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:109) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at com.camunda.impl.LogicApplicationKt.main(LogicApplication.kt:15) ~[classes/:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[workspace/:na]
+[32mcamunda_1   |[0m Caused by: org.mariadb.jdbc.internal.util.dao.QueryException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authentication(AbstractConnectProtocol.java:557) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.handleConnectionPhases(AbstractConnectProtocol.java:499) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connect(AbstractConnectProtocol.java:384) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:825) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:469) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:104) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	... 55 common frames omitted
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m 2021-03-29 23:32:07.560  WARN 1 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m java.sql.SQLSyntaxErrorException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.get(ExceptionMapper.java:139) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.getException(ExceptionMapper.java:101) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.throwException(ExceptionMapper.java:91) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:109) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at com.camunda.impl.LogicApplicationKt.main(LogicApplication.kt:15) ~[classes/:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[workspace/:na]
+[32mcamunda_1   |[0m Caused by: org.mariadb.jdbc.internal.util.dao.QueryException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authentication(AbstractConnectProtocol.java:557) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.handleConnectionPhases(AbstractConnectProtocol.java:499) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connect(AbstractConnectProtocol.java:384) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:825) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:469) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:104) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	... 55 common frames omitted
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m 2021-03-29 23:32:07.574  INFO 1 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+[32mcamunda_1   |[0m 2021-03-29 23:32:07.921  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.925 ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m java.sql.SQLSyntaxErrorException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.get(ExceptionMapper.java:139) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.getException(ExceptionMapper.java:101) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.throwException(ExceptionMapper.java:91) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:109) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at com.camunda.impl.LogicApplicationKt.main(LogicApplication.kt:15) ~[classes/:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[workspace/:na]
+[32mcamunda_1   |[0m Caused by: org.mariadb.jdbc.internal.util.dao.QueryException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authentication(AbstractConnectProtocol.java:557) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.handleConnectionPhases(AbstractConnectProtocol.java:499) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connect(AbstractConnectProtocol.java:384) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:825) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:469) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:104) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	... 55 common frames omitted
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.926  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1049, SQLState: 42000
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.927 ERROR 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.933 ERROR 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.934  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.936  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.954  INFO 1 --- [           main] ConditionEvaluationReportLoggingListener : 
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[32mcamunda_1   |[0m 2021-03-29 23:32:08.956 ERROR 1 --- [           main] o.s.boot.SpringApplication               : Application run failed
+[32mcamunda_1   |[0m 
+[32mcamunda_1   |[0m org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.9.RELEASE.jar:2.3.9.RELEASE]
+[32mcamunda_1   |[0m 	at com.camunda.impl.LogicApplicationKt.main(LogicApplication.kt:15) ~[classes/:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[workspace/:na]
+[32mcamunda_1   |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[workspace/:na]
+[32mcamunda_1   |[0m Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795) ~[spring-beans-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	... 25 common frames omitted
+[32mcamunda_1   |[0m Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+[32mcamunda_1   |[0m 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.13.RELEASE.jar:5.2.13.RELEASE]
+[32mcamunda_1   |[0m 	... 29 common frames omitted
+[32mcamunda_1   |[0m Caused by: java.sql.SQLSyntaxErrorException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.get(ExceptionMapper.java:139) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.getException(ExceptionMapper.java:101) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.ExceptionMapper.throwException(ExceptionMapper.java:91) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:109) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:na]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.28.Final.jar:5.4.28.Final]
+[32mcamunda_1   |[0m 	... 45 common frames omitted
+[32mcamunda_1   |[0m Caused by: org.mariadb.jdbc.internal.util.dao.QueryException: Could not connect: Unknown database 'camunda'
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authentication(AbstractConnectProtocol.java:557) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.handleConnectionPhases(AbstractConnectProtocol.java:499) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connect(AbstractConnectProtocol.java:384) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:825) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:469) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	at org.mariadb.jdbc.Driver.connect(Driver.java:104) ~[mariadb-java-client-1.5.7.jar:na]
+[32mcamunda_1   |[0m 	... 55 common frames omitted
+[32mcamunda_1   |[0m 
+[32mcamunda-test_camunda_1 exited with code 1
+[0m

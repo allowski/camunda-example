@@ -1,0 +1,4 @@
+Attaching to keycloak_keycloak_1
+[36mkeycloak_1  |[0m User with username 'admin' already added to '/opt/jboss/keycloak/standalone/configuration/keycloak-add-user.json'
+[36mkeycloak_keycloak_1 exited with code 1
+[0m
